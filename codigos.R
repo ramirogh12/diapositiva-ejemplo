@@ -1,3 +1,3 @@
 #Ejemplo de script
 
-1+1 
+rnorm(100)
