@@ -1,3 +1,3 @@
 #Ejemplo de script
 
-rnorm(100)
+1+1 
