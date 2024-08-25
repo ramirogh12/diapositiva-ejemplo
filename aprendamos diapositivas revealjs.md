@@ -6,12 +6,11 @@ format:
     theme: simple
     slide-number: true
     incremental: true
-    transition: slide
+    transition: convex
     transition-speed: slow
     code-overlays: true
     width: 1280
     height: 720
-    scrollable: true
 title-slide-attributes:
   data-background-image: "https://image.slidesdocs.com/responsive-images/background/blue-abstract-texture-polygon-technology-nature-powerpoint-background_94e8175035__960_540.jpg"
   data-background-size: cover
@@ -22,57 +21,55 @@ title-slide-attributes:
 
 Aquí hay un top secret.
 
+
 ## Temas de RevealJS (diapo centrada) {.center}
 
-:::: columns
+:::: {.columns}
+
 ::: {.column width="40%"}
--   beige
--   blood
--   dark
--   default
--   league
--   moon
+- beige
+- blood
+- dark
+- default
+- league
+- moon
 :::
 
 ::: {.column width="60%"}
--   night
--   serif
--   simple
--   sky
--   solarized
+- night
+- serif
+- simple
+- sky
+- solarized
 :::
+
 ::::
+
 
 ## Lista Numerada
 
-1.  none (Sin transición)
-2.  fade (Desvanecimento cruzado)
-3.  slide (Movimiento horizontal)
-4.  convex (Movimiento convexo en ángulo)
-5.  concave (Movimiento concavo en ángulo)
-6.  zoom (Aplica zoom)
+1. none (Sin transición)
+1. fade (Desvanecimento cruzado)
+1. slide (Movimiento horizontal)
+1. convex (Movimiento convexo en ángulo)
+1. concave (Movimiento concavo en ángulo)
+1. zoom	(Aplica zoom) 
 
 ## Imagen desde la Web
 
-![paper ethnozoology](https://revistas.unal.edu.co/public/journals/30/submission_94140_76308_coverImage_es_ES.png)
+![Quarto Logo](https://quarto.org/img/quarto-logo.png)
 
-![Quarto Logo](https://quarto.org/images/demo-jupyter-plain.png)
+
 
 ## Colocar un gran texto que nunca se desborda
 
-::: r-fit-text
-masterX Academy!!
+::: {.r-fit-text}
+masterX
 :::
 
-## {.center}
+## Añadiendo fragmentos 
 
-::: r-fit-text
-Configuraciones
-:::
-
-## Añadiendo fragmentos
-
-::: fragment
+::: {.fragment}
 Fade in
 :::
 
@@ -92,23 +89,26 @@ Fade in, then out
 Slide up while fading in
 :::
 
+
 ## Añadiendo orden a los fragmentos
 
-::: {.fragment fragment-index="3"}
+::: {.fragment fragment-index=3}
 Aparece al final
 :::
 
-::: {.fragment fragment-index="1"}
+::: {.fragment fragment-index=1}
 Aparece primero
 :::
 
-::: {.fragment fragment-index="2"}
+::: {.fragment fragment-index=2}
 Aparece segundo
 :::
+
 
 ## Paneles con Código y Gráfico {transition="fade" transition-speed="fast"}
 
 ::: {.panel-tabset}
+
 ## Código
 
 ```{r}
@@ -142,6 +142,7 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
 ```{r}
 mtcars
 ```
+
 :::
 
 ## Insertando interactividad: mapas
@@ -221,3 +222,6 @@ fig <- fig %>%
 fig
 
 ```
+
+
+
